@@ -1,0 +1,304 @@
+/* GENERAL */
+
+* {
+  font-family: 'Dancing Script', cursive;
+  padding: 0;
+}
+
+body {
+  color: white;
+  background-color: #02010a;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  padding-right: 5px;
+  font-size: 1.1em;
+}
+a:hover {
+  color: #FDA52E;
+}
+ul li {
+  list-style-type: none;
+}
+
+#general {
+  width: 900px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+header {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  width: 100%;
+  height: 90px;
+}
+
+#logo {
+  float: left;
+  text-shadow: 2px 2px 2px #02010a;
+  padding-left: 10px;
+  vertical-align: middle;
+  width: 70%;
+  height: 90px;
+}
+
+nav {
+  float: right;
+  display: flex;
+  width: 30%;
+  height: 90px;
+}
+
+nav a {
+  padding: 5px;
+  padding-top: 30px;
+}
+
+
+/* CONTENT */
+
+section {
+  width: 100%;
+  height: auto;
+  background-color: #d5c75f
+}
+
+#principal {
+  text-align: center;
+  background-color: #82c3a6;
+  padding: 20px;
+  height: 50%;
+}
+#principal img {
+  height: 80%;
+  border: 1px solid black;
+  float: center;
+  margin-top: 25px;
+}
+
+#principal img:hover{
+  transform: translate(0 , 10px);
+  transition-duration: 2s;
+  box-shadow: 3px 3px 1px #82c3a6;
+}
+
+#secundario {
+  display: flex;
+  background-color: #d5c75f;
+  border: 1px;
+  height: 50%;
+}
+
+#secundario img {
+  height: 60%;
+  border: 1px solid black;
+  float: center;
+  margin-top: 25px;
+}
+
+#secundario figure img {
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px grey;
+}
+
+#imagen2 img:hover{
+	transform: rotate(10deg);
+  transition-duration: 2s;
+  box-shadow: 3px 3px 1px #82c3a6;
+}
+
+#imagen3 img:hover {
+  transform: translate(20px , -5px);
+  transition-duration: 2s;
+  box-shadow: 3px 3px 1px #82c3a6;
+}
+
+/* paisajes y retratos */
+
+#galeria1 {
+    width: 100%;
+    height: auto;
+}
+
+#galeria1 #LINEA1 {
+  display: flex;
+  text-align: center;
+}
+
+#galeria1 #LINEA1 img {
+  width: 110%;
+  float: center;
+}
+
+#galeria1 #LINEA2 {
+  display: flex;
+  text-align: center;
+}
+
+#galeria1 #LINEA2 img {
+  width: 110%;
+  float: center;
+}
+
+#galeria1 #LINEA3 {
+  display: flex;
+  text-align: center;
+}
+
+#galeria1 #LINEA3 img {
+  width: 110%;
+  float: center;
+}
+
+#galeria1 #f1 {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+
+#galeria1 #f3 {
+    -webkit-filter: sepia(90%);
+    filter: sepia(90%);
+}
+
+#galeria1 #f2, #f4, #f6 {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #C6d5c5;
+  border-radius: 0 0 10px 10px;
+}
+
+#contact {
+  padding-left: 70px;
+  width: 25%;
+}
+#terms {
+  padding-left: 40px;
+  width: 25%;
+}
+#social {
+  padding-left: 40px;
+  width: 35%;
+}
+#copyrights {
+  padding-left: 40px;
+  width: 25%;
+}
+
+.redsocial {
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+/* Menos de 900px */
+
+@media (max-width: 900px) {
+
+#general {
+  width: 100%;
+  flex-direction: column;
+}
+    header {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    header #logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav {
+      width: 100%;
+      flex-direction: column;
+      display: block;
+      text-align: center;
+      padding-top: 40px;
+    }
+
+/**/
+
+    section {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+
+    #principal {
+      height: auto;
+    }
+
+    #principal img {
+      width: 100%;
+      height: auto;
+    }
+
+    #secundario {
+      flex-direction: column;
+      height: auto;
+    }
+
+    #secundario img {
+      width: 100%;
+      height: auto;
+      float: center;
+    }
+
+    #galeria1 {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+
+    #LINEA1, #LINEA2, #LINEA3 {
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }
+    #galeria1 figure{
+      width: 70%;
+      padding: 20px;
+      height: auto;
+    }
+
+    #galeria1 img{
+      width: 80%;
+      height: auto;
+    }
+
+/**/
+
+  footer {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+  }
+
+  footer div {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  #contact, #terms, #social, #copyrights {
+    flex-direction: column;
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: inherit;
+  }
+}
